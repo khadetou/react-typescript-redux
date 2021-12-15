@@ -1,10 +1,12 @@
 
 import './App.css';
+import RepositoryList from './components/RepositoryList';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <h1>Search for a package on npm</h1>
+      <RepositoryList />
     </div>
   );
 }
