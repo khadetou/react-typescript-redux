@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { useAction } from '../hooks/useAction';
 
 const RepositoryList: React.FC = () => {
@@ -9,6 +10,8 @@ const RepositoryList: React.FC = () => {
         event.preventDefault();
         searchRepositories(term);
     }
+    const { data, error, loading } = useSelector((state: any) => state.repositories);
+
     return (
         <div>
             <form onSubmit={onSubmit}>
