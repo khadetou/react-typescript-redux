@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      Hello world!
+      <h1>Search for a package on npm</h1>
     </div>
   );
 }
